@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em TNL</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vártios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    
+    <!--<source> tem que ser na ordem da exibição do tamnho das imagens EXEMPLO: pequeno, médio, grande.-->
+    <!--Editar o tamanho das mesmas imagens para ajudar o usuário a ver a imagem correspondente ao dispositivo que o usuário esta por usar.-->
+    <!--Da pra usar max-width ou min-width-->
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/img_pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img_media.png" type="image/png">
+        <img src="imagens/img_grande.png" alt="Imagem grande">
+    </picture>
+</body>
+</html>
