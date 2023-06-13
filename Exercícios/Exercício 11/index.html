@@ -18,5 +18,26 @@
         <source media="(max-width: 1050px)" srcset="imagens/img_media.png" type="image/png">
         <img src="imagens/img_grande.png" alt="Imagem grande">
     </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!--MANEIRA "CONVÊNCIONAL DE COLOCAR UMA MÍDIA EM MP3"-->
+    <audio src="Midia/ÁudioMusic.mp3" controls autoplay></audio>
+
+    <!--OUTRA MANEIRA DE ADICIONAR MÍDIAS-->
+    <audio>
+        <source src="Midia/ÁudioMusic.mp3" type="audio/mpeg">
+        <source src="Midia/ÁudioMusic.ogg" type="audio/ogg">
+        <source src="Midia/ÁudioMusic.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="https://studio.youtube.com/channel/UCjjTU3eWquM5zDNaNekcH_Q/music">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+    <!--<AUDIO PRELOAD> = PRÉ-CARREGAMENTO OU NÃO ACEITANDO TRÊS VALORES:
+        METADATA = VAI CARREGAR APENAS INFORMAÇÕES SOBRE O ARQUIVOS;
+        NONE = NÃO CARREGA NADA;
+        AUTO = CARREGA A MÍDIA INTEIRA AO CARREGAR A PÁGINA MESMO Q O USUÁRIO ÃO TENHA SOLICITADO-->
+
+        <!--<AUDIO CONTROLS> = PLAYER NA TELA (CARACTERES)-->
+        <!--<AUDIO OUTOPLAY> = QUANDO INSERIDO VAI INICIAR A REPODUÇÃO ASSIM QUE A PÁGINA CARREGAR-->
+        <!--<AUDIO LOOP> = REPETIÇÃO DO ÁUDIO-->
 </body>
 </html>
